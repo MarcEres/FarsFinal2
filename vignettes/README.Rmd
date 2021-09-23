@@ -1,0 +1,65 @@
+---
+title: "README"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{README}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(FarsFinal)
+```
+
+---
+title: "README.Rmd"
+author: "Marc Eres"
+date: "23/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# US FARS (Fatality Analysis Recording System)
+
+This package sole objective is to produce graphics of the accidents in US.
+
+## The `make_filename` function
+
+This function generates a filename.
+
+## The `fars_read` function
+
+The `fars_read` will use as input the filename string from `make_filename`.
+
+Based on the archives from US FARS that are located in the documents folder.
+
+## The `fars_read_years` function
+
+This functions uses both functions (`make_filename` and `fars_read`) to generate a list.
+
+## The `fars_summarize_years` function
+
+This functions print a summary.
+
+## The `fars_map_state` function
+
+Plot a Graphic of each State of US.
+
+# Dependencies
+
+* dplyr
+* magrittr
+* tidyr
+* rlang
+* graphics
+* maps
