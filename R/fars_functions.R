@@ -152,7 +152,7 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
-#' \dontrun{fars_map_state(34, 2014)}
+#' \dontrun{fars_map_state(state.num = 1, year = 2013)}
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
