@@ -22,7 +22,7 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
-#' fars_read("accident_2013.csv")
+#' \dontrun{fars_read("accident_2013.csv")}
 #'
 #' @export
 fars_read <- function(filename) {
@@ -47,7 +47,7 @@ fars_read <- function(filename) {
 #' @details It requires a numerical or integer input otherwise ends with an error.
 #'
 #' @examples
-#' makefilename(2016)
+#' \dontrun{makefilename(2016)}
 #'
 #'@export
 make_filename <- function(year) {
@@ -77,8 +77,8 @@ make_filename <- function(year) {
 #' @importFrom dplyr %>% mutate select
 #'
 #' @examples
-#' fars_read_years(2013:2015)
-#' fars_read_years(list(2013, 2015))
+#' \dontrun{fars_read_years(2013:2015)}
+#' \dontrun{fars_read_years(list(2013, 2015))}
 #'
 #'@export
 fars_read_years <- function(years) {
@@ -115,7 +115,7 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
-#' fars_summarize_years(2013:2015)
+#' \dontrun{fars_summarize_years(years = list(2013,2014,2015))}
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -152,7 +152,7 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
-#' fars_map_state(34, 2014)
+#' \dontrun{fars_map_state(34, 2014)}
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
