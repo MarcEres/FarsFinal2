@@ -1,4 +1,4 @@
-ibrary(testthat)
+library(testthat)
 library(FarsFinal)
 library(dplyr)
 library(readr)
